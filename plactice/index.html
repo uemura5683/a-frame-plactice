@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>お手軽VR</title>
+		<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+	</head>
+	<body>
+		<!-- ① -->
+		<a-scene background="color:#000000">
+	
+			<!-- ② -->
+			<!--床-->
+			<a-plane position="0 0 -3" rotation="-90 0 0" width="20" height="20" color="#955629" shadow="" material="" geometry=""></a-plane>
+		
+			<!--光-->
+			<a-entity light="type:directional; castShadow:false; color:#ffffff;" position="-10 10 -1"></a-entity>
+
+			<!--反射光-->
+			<a-entity light="type:ambient; color:#39556C;"></a-entity>
+
+			<!--立方体-->
+			<!--
+			<a-box position="-2 1 -3"  rotation="0 0 0" color="#79a1e7" width="1" height="1" depth="1" shadow animation="property: depth; to:2; dur: 1000; easing:linear; loop: true; dir:alternate;"></a-box>
+			-->
+
+			<a-sphere position="3 1.5 -3" radius="0.25" color="#b39c7d" shadow  src="https://raw.githubusercontent.com/uemura5683/threejs_plactice/master/moon/img/moon.jpg" animation="property: position; to:3 3.5 -3; dur: 10000; easing:easeInQuad; loop: true; dir:alternate;"></a-sphere>
+
+			<a-sphere position="-3 1.5 -3" radius="1.0" color="#b39c7d" shadow  src="https://raw.githubusercontent.com/uemura5683/threejs_plactice/master/moon/img/earch.jpg" animation="property: position; to:-3 3.5 -3; dur: 10000; easing:easeInQuad; loop: true; dir:alternate;"></a-sphere>
+
+			<!--球体-->
+			<a-sphere position="0 0.5 -3" radius="0.5" color="#b39c7d" shadow  animation="property: position; to:0 1.5 -3; dur: 10000; easing:easeInQuad; loop: true; dir:alternate;"></a-sphere>
+
+			<!--円形-->
+			<a-circle position="0 0.5 -3" rotation="-90 0 0" radius="1" color="gray" shadow animation="property: position; to:0 1.5 -3; dur: 10000; easing:easeInQuad; loop: true; dir:alternate;"></a-circle>
+
+			<!--円柱-->
+			<!--
+			<a-cylinder position="2 1 -3" rotation="0 0 0" radius="0.5" height="1" color="#E25C05" shadow animation="  property: rotation; to:360 0 0 ; dur: 10000; easing:linear; loop: true; dir:normal;"></a-cylinder>
+			-->
+
+		</a-scene>
+	</body>
+</html>
