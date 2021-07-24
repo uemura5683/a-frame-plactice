@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>お手軽VR 地球・月・土星</title>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene style="background:radial-gradient(#494067, #030D14);">
+            <a-entity light="type:directional; castShadow:false; color:#ffffff;" position="-10 10 -1"></a-entity>
+
+            <a-entity light="type:ambient; color:#39556C;"></a-entity>
+
+            <a-sphere position="2. 1 -3" radius="0.25" color="#b39c7d" shadow  src="https://raw.githubusercontent.com/uemura5683/threejs_plactice/master/moon/img/moon.jpg" animation="property: position; to:2. 2.5 -3; dur: 10000; easing:easeInQuad; loop: true; dir:alternate;"></a-sphere>
+
+            <a-sphere position="-2.5 1 -3" radius="1.0" color="#b39c7d" shadow  src="https://raw.githubusercontent.com/uemura5683/threejs_plactice/master/moon/img/earch.jpg" animation="property: position; to:-2.5 2.5 -3; dur: 10000; easing:easeInQuad; loop: true; dir:alternate;"></a-sphere>
+
+            <a-sphere position="0 1 -3" radius="0.5" color="#b39c7d" shadow  animation="property: position; to:0 2.5 -3; dur: 10000; easing:easeInQuad; loop: true; dir:alternate;"></a-sphere>
+
+            <a-circle position="0 1 -3" rotation="-90 0 0" radius="1" color="gray" shadow animation="property: position; to:0 2.5 -3; dur: 10000; easing:easeInQuad; loop: true; dir:alternate;"></a-circle>
+        </a-scene>
+    </body>
+</html>
